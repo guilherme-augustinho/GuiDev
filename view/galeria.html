@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería | GuiDev</title>
+    <!-- Ícones e estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/lightbox.min.css" />
+    <link rel="stylesheet" href="../css/galeria.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="Logo de GuiDev" width="80" height="80" /></a>
+            <h1>GuiDev</h1>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="mobile-menu" aria-label="Abrir menú de navegación"> 
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navegación principal -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#" class="activo">Galería</a></li>
+                <li><a href="./presupuesto.html">Presupuesto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1 class="titulo-galeria">Nuestros proyectos destacados</h1>
+        <hr>
+
+        <section class="galeria">
+            <!-- Proyecto 1 -->
+            <figure>
+                <a href="../images/dev.jpg" data-lightbox="galeria" data-title="Desarrollo Web Moderno">
+                    <img src="../images/dev.jpg" alt="Desarrollo Web Moderno" />
+                </a>
+                <figcaption>Desarrollo Web Moderno</figcaption>
+            </figure>
+
+            <!-- Proyecto 2 -->
+            <figure>
+                <a href="../images/aplicWeb.jpg" data-lightbox="galeria" data-title="Aplicación Web en funcionamiento">
+                    <img src="../images/aplicWeb.jpg" alt="Aplicación Web" />
+                </a>
+                <figcaption>Aplicación Web en funcionamiento</figcaption>
+            </figure>
+
+            <!-- Proyecto 3 (ejemplo adicional) -->
+            <figure>
+                <a href="../images/equipoTrabajando.jpg" data-lightbox="galeria" data-title="Equipo en Desarrollo">
+                    <img src="../images/equipoTrabajando.jpg" alt="Equipo en Desarrollo" />
+                </a>
+                <figcaption>Equipo en Desarrollo</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer__top">
+            <!-- Marca -->
+            <div class="footer__brand">
+                <div class="brand-title">
+                    <img src="../images/logo.png" alt="Logo de GuiDev" class="logo" />
+                    <span>GuiDev</span>
+                </div>
+                <p class="footer__tagline">
+                    Transformando ideas en experiencias digitales excepcionales desde 2015.
+                </p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer__links">
+                <h4 class="footer_titles">Enlaces rápidos</h4>
+                <hr />
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer__social">
+                <h4 class="footer_titles">Síguenos</h4>
+                <hr />
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer_contato">
+                <h4 class="footer_titles">Contacto</h4>
+                <hr />
+                <div class="contato_datos">
+                    <p>Calle Príncipe de Viana, Lérida</p>
+                    <p>(034) 641388529</p>
+                    <p>contacto@guidev.com</p>
+                    <p>Lun - Vie: 9h a 18h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 GuiDev. Todos los derechos reservados.</p>
+            <p>
+                <a href="aviso-legal.html">Aviso legal</a> |
+                <a href="politica-privacidad.html">Política de privacidad</a> |
+                <a href="#">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/137e8377c5.js" crossorigin="anonymous"></script>
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <script src="../js/mobileMenu.js"></script>
+
+</body>
+
+</html>

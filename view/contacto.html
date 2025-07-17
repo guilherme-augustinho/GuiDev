@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | GuiDev</title>
+
+    <!-- Estilos y librerías externas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!-- Cabecera con navegación -->
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="Logo de GuiDev" width="80" height="80" /></a>
+            <h1>GuiDev</h1>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./presupuesto.html">Presupuesto</a></li>
+                <li><a href="#" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h2>Cálculo de ruta hacia nuestra oficina</h2>
+            <hr>
+            <div id="mapa"></div>
+        </section>
+
+        <section class="contacto-info">
+            <h2>Datos de contacto</h2>
+            <hr>
+            <div class="datos-container">
+                <div class="dato">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Calle Príncipe de Viana, Lérida</p>
+                </div>
+                <div class="dato">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>(+34) 641 388 529</p>
+                </div>
+                <div class="dato">
+                    <i class="fas fa-envelope"></i>
+                    <p>contacto@guidev.com</p>
+                </div>
+                <div class="dato">
+                    <i class="fas fa-clock"></i>
+                    <p>Lunes a Viernes: 9:00 a 18:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer__top">
+            <!-- Marca -->
+            <div class="footer__brand">
+                <div class="brand-title">
+                    <img src="../images/logo.png" alt="Logo de GuiDev" class="logo" />
+                    <span>GuiDev</span>
+                </div>
+                <p class="footer__tagline">
+                    Transformando ideas en experiencias digitales excepcionales desde 2015.
+                </p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer__links">
+                <h4 class="footer_titles">Enlaces rápidos</h4>
+                <hr />
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer__social">
+                <h4 class="footer_titles">Síguenos</h4>
+                <hr />
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer_contato">
+                <h4 class="footer_titles">Contacto</h4>
+                <hr />
+                <div class="contato_datos">
+                    <p>Calle Príncipe de Viana, Lérida</p>
+                    <p>(+34) 641 388 529</p>
+                    <p>contacto@guidev.com</p>
+                    <p>Lun - Vie: 9:00 a 18:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 GuiDev. Todos los derechos reservados.</p>
+            <p>
+                <a href="aviso-legal.html">Aviso legal</a> |
+                <a href="politica-privacidad.html">Política de privacidad</a> |
+                <a href="#">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../js/mobileMenu.js"></script>
+    <script src="../js/contacto.js"></script>
+    
+</body>
+
+</html>

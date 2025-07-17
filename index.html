@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="GuiDev es una agencia de desarrollo web especializada en crear experiencias digitales personalizadas para hacer crecer tu negocio.">
+    <title>GuiDev | Agencia de Desarrollo Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Logo de GuiDev" width="80" height="80"></a>
+            <h1>GuiDev</h1>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="view/galeria.html">Galería</a></li>
+                <li><a href="view/presupuesto.html">Presupuesto</a></li>
+                <li><a href="view/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Sección: Inicial -->
+        <section class="section-inicial">
+            <div class="contenido-inicial">
+                <h2 class="titulo-principal">
+                    <span>Transformamos ideas en </span>
+                    <span>experiencias digitales</span>
+                </h2>
+
+                <p>
+                    Somos especialistas en desarrollo web, creando soluciones personalizadas para que
+                    <span> tu negocio crezca en el mundo digital.</span>
+                </p>
+
+                <div class="buttons-inicial">
+                    <button id="btn-solicitar">Solicitar presupuesto</button>
+                    <button id="btn-servicios">Nuestros servicios</button>
+                </div>
+            </div>
+
+            <div class="imgs">
+                <img src="images/img1.png" alt="Imagen de transformación digital" width="300" height="250"
+                    class="image1">
+            </div>
+        </section>
+
+        <!-- Sección: Quiénes somos -->
+        <section class="quienes-somos">
+
+            <div class="cabecera">
+                <h2 class="titulo-section">¿Quiénes somos?</h2>
+                <hr class="raia">
+            </div>
+
+            <div class="contenido">
+                <h3>Una agencia enfocada en resultados</h3>
+                <p>
+                    <span>
+                        Fundada en 2015, GuiDev nació de la pasión por crear experiencias digitales excepcionales.
+                        Nuestro equipo está compuesto por profesionales talentosos y dedicados, especializados en
+                        diversas áreas del desarrollo web.
+                    </span>
+                    <span>
+                        Creemos que cada proyecto es único y merece un enfoque personalizado. Por eso, trabajamos en
+                        estrecha colaboración con nuestros clientes para comprender sus necesidades y objetivos,
+                        asegurando resultados que superen sus expectativas.
+                    </span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección: Nuestros servicios -->
+        <section class="nuestros-servicios">
+
+            <div class="cabecera">
+                <h2 class="titulo-section">Nuestros Servicios</h2>
+                <hr class="raia">
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>
+                        Creamos sitios responsivos, intuitivos y optimizados para SEO, garantizando una presencia en
+                        línea eficaz para tu negocio.
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-check" style="color: #00ADEF;"></i> Desarrollo de sitios web</li>
+                        <li><i class="fa-solid fa-check" style="color: #00ADEF;"></i> Tiendas virtuales</li>
+                        <li><i class="fa-solid fa-check" style="color: #00ADEF;"></i> Landing pages</li>
+                    </ul>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+
+                <div class="card">
+                    <h3>Aplicaciones Web</h3>
+                    <p>
+                        Desarrollamos aplicaciones web personalizadas que automatizan procesos y mejoran la eficiencia
+                        de tu negocio.
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-check" style="color: #00ADEF;"></i> Sistemas de gestión</li>
+                        <li><i class="fa-solid fa-check" style="color: #00ADEF;"></i> Tableros interactivos</li>
+                        <li><i class="fa-solid fa-check" style="color: #00ADEF;"></i> Integraciones con APIs</li>
+                    </ul>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Nuestro equipo -->
+        <section class="nuestro-equipo">
+            <div class="cabecera">
+                <h2 class="titulo-section">Nuestro equipo</h2>
+                <hr class="raia">
+            </div>
+
+            <div id="contenedor-equipo" class="contenedor-equipo">
+                <!-- El JavaScript insertará aquí los miembros del JSON -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="brand-title">
+                        <img src="./images/logo.png" alt="Imagen de la Logo del site" class="logo" />
+                        <span>GuiDev</span>
+                    </div>
+                    <p class="footer__tagline">
+                        Transformando ideas en experiencias digitales excepcionales desde 2015.
+                    </p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="footer__links">
+                    <h4 class="footer_titles">Enlaces rápidos</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="./view/galeria.html">Galería</a></li>
+                        <li><a href="view/presupuesto.html">Presupuesto</a></li>
+                        <li><a href="view/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer__social">
+                    <h4 class="footer_titles">Síguenos</h4>
+                    <hr>
+                    <div class="redes-sociais">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer_contato">
+                    <h4 class="footer_titles">Contacto</h4>
+                    <hr>
+                    <div class="contato_dados">
+                        <p>Calle Príncipe de Viana, Lérida</p>
+                        <p>(034) 641388529</p>
+                        <p>contacto@guidev.com</p>
+                        <p>Lun - Vie: 9h a 18h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 GuiDev. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#">Aviso legal</a> |
+                    <a href="#">Política de privacidad</a> |
+                    <a href="#">Cookies</a>
+                </p>
+            </div>
+        </footer>
+
+
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/137e8377c5.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </main>
+</body>
+
+</html>

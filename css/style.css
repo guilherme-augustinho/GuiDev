@@ -1,0 +1,533 @@
+/* ========================
+   VARIABLES DE COLOR
+======================== */
+:root {
+  --morado: #18025C;
+  --celeste: #00ADEF;
+  --blanco: #FFFFFF;
+  --negro: #000000;
+}
+
+/* ========================
+   RESET GLOBAL
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================
+   ESTILO GENERAL
+======================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--blanco);
+  line-height: 1.6;
+}
+
+/* ========================
+   HEADER FIJO
+======================== */
+header {
+  background-color: var(--morado);
+  color: var(--blanco);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--blanco);
+  cursor: pointer;
+}
+
+/* Efecto al hacer scroll */
+header.header-scroll {
+  backdrop-filter: blur(8px);
+  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+/* ========================
+   NAVEGACIÓN
+======================== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  color: var(--celeste);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.activo {
+  color: var(--blanco);
+  font-weight: bold;
+  border-bottom: 2px solid var(--morado);
+  
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ========================
+   MAIN Y SECCIONES
+======================== */
+main {
+  padding-top: 9rem;
+}
+
+section {
+  width: 100%;
+  padding: 4rem 5%;
+  background-color: var(--blanco);
+}
+
+/* ========================
+   SECCIÓN INICIAL
+======================== */
+.section-inicial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--morado);
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contenido-inicial {
+  color: var(--blanco);
+  flex: 1;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.buttons-inicial {
+  margin-top: 10px;
+}
+
+#btn-solicitar {
+  background-color: var(--celeste);
+  width: 10rem;
+  height: 5rem;
+}
+
+#btn-solicitar:hover {
+  background-color: color-mix(in srgb, var(--celeste) 50%, white);
+}
+
+#btn-servicios {
+  background-color: var(--morado);
+  color: var(--blanco);
+  border: 1px solid var(--blanco);
+  width: 10rem;
+  height: 5rem;
+}
+
+#btn-servicios:hover {
+  background-color: color-mix(in srgb, var(--morado) 80%, white);
+}
+
+.imgs {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen-inicial {
+  width: 300px;
+  height: auto;
+}
+
+/* ========================
+   SECCIÓN: QUIÉNES SOMOS
+======================== */
+.quienes-somos {
+  background-color: var(--blanco);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.quienes-somos.show {
+  transform: translateY(0);
+  opacity: 1;
+   
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-section {
+  font-size: 2rem;
+}
+
+.raia {
+  width: 10%;
+  height: 3px;
+  margin-bottom: 1rem;
+  background-color: var(--celeste);
+}
+
+.contenido {
+  align-self: flex-end;
+  width: 400px;
+  padding: 2rem;
+}
+
+.contenido h3 {
+  font-size: 1.5rem;
+}
+
+.contenido p span {
+  display: block;
+  margin-top: 10px;
+}
+
+/* ========================
+   SECCIÓN: NUESTROS SERVICIOS
+======================== */
+.nuestros-servicios {
+  background-color: rgb(245, 245, 245);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.nuestros-servicios.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+.ver-mas {
+  background-color: var(--blanco);
+  color: var(--celeste);
+}
+
+.saiba-mais:hover {
+  background-color: var(--blanco);
+  color: color-mix(in srgb, var(--celeste) 50%, white);
+}
+
+/* ========================
+   SECCIÓN: NUESTRO EQUIPO
+======================== */
+.nuestro-equipo {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.nuestro-equipo.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.contenedor-equipo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-equipo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ========================
+   PIE DE PÁGINA (FOOTER)
+======================== */
+.footer {
+  background-color: var(--morado);
+  color: #ccc;
+  padding: 3rem 1rem;
+  font-family: Arial, sans-serif;
+  
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "brand links"
+    "social contato";
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.footer_titles {
+  color: var(--blanco);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.footer__brand {
+  grid-area: brand;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.brand-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__brand span {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.brand-title {
+  display: flex;
+  align-items: center;
+  /* alinha verticalmente */
+  gap: 0.5rem;
+  /* espaço entre a logo e o texto */
+}
+
+.brand-title img {
+  height: 32px;
+  /* ou o tamanho ideal da sua logo */
+}
+
+
+.footer__links {
+  grid-area: links;
+}
+
+.footer__social {
+  grid-area: social;
+}
+
+.footer_contato {
+  grid-area: contato;
+}
+
+.footer__bottom {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer__brand img {
+  width: 60px;
+  height: auto;
+}
+
+.footer__logo,
+.footer__logo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__links ul,
+.redes-sociais {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.footer__links a,
+.footer__bottom a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer__links a:hover,
+.footer__bottom a:hover {
+  color: var(--celeste);
+}
+
+.redes-sociais a {
+  background-color: var(--celeste);
+  color: #fff;
+  font-size: 20px;
+  margin-right: 0.5rem;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  background-color: #008bb5;
+  transform: scale(1.1);
+}
+
+.contato_dados {
+  padding-top: 10px;
+}
+
+/* ========================
+   BOTONES GENÉRICOS
+======================== */
+button {
+  background-color: var(--celeste);
+  border: none;
+  color: var(--blanco);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--morado);
+}
+
+
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+ #main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #0b0146;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  /* Mostra quando a classe "show" é ativada */
+  #main-nav ul.show {
+    display: flex;
+  }
+
+  /* Mostra o botão de menu hamburguer */
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Esconde o menu padrão no mobile */
+  #main-nav {
+    width: 100%;
+  }
+
+
+  .section-inicial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-inicial,
+  .imgs {
+    flex: 1 1 100%;
+  }
+
+  .contenido {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-equipo{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "links"
+      "social"
+      "contato";
+  }
+}
+

@@ -1,0 +1,84 @@
+/* Estilo do main com flexbox centralizado */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+/* Estilo do mapa */
+#mapa {
+    height: 300px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contenedor de datos */
+.contacto-info {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Linha abaixo dos títulos centralizada */
+section h2 {
+    text-align: center;
+}
+
+section hr {
+    margin: 0 auto 1rem auto;
+    background-color: #00ADEF;
+    width: 200px;
+    height: 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Cada item de dados de contato */
+.dato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+
+    background: #f8f8f8;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Ícones */
+.fas {
+    margin-right: 0.8rem;
+    color: #00ADEF;
+    font-size: 1.2rem;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mapa,
+    .contacto-info {
+        max-width: 100%;
+    }
+    
+    .fas{
+        color: white;
+        font-size: 2rem;
+    }
+
+}

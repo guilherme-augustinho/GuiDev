@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto | GuiDev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="Logo de GuiDev" width="80" height="80"></a>
+            <h1>GuiDev</h1>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="#" class="activo">Presupuesto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="formulario-presupuesto">
+
+            <!-- Formulario -->
+            <form action="#" method="post">
+
+                <h2>Formulario de solicitud</h2>
+                <hr>
+
+                <!-- Datos personales -->
+                <div class="datos_personales">
+                    <input type="text" class="inputs" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="text" class="inputs" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <input type="tel" class="inputs" id="telefono" name="telefono" placeholder="Telefono" required
+                        pattern="\d{9}">
+                    <input type="email" class="inputs" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <!-- Detalles del presupuesto -->
+                <div class="presupuesto">
+                    <h3>Elige tu servicio</h3>
+
+
+                    <select id="producto" name="producto" class="inputs" required>
+                        <option value="" disabled selected>Seleccione un producto...</option>
+                        <option value="Desarrollo Web">Desarrollo Web</option>
+                        <option value="Aplicaciones Web">Aplicaciones Web</option>
+                        <option value="Mantenimiento y soporte técnico">Mantenimiento y soporte técnico</option>
+                    </select>
+
+
+                    <p>Extras disponibles:</p>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" class="inputs" name="extras[]" value="color"> Color
+                            personalizado</label>
+                        <label><input type="checkbox" class="inputs" name="extras[]" value="tipografia"> Tipografía
+                            personalizada</label>
+                        <label><input type="checkbox" class="inputs" name="extras[]" value="terminacion"> Terminación
+                            personalizada</label>
+                        <label><input type="checkbox" class="inputs" name="extras[]" value="nombre"> Nombre
+                            personalizado</label>
+                    </div>
+
+                    <input type="number" class="inputs plazo" id="plazo" name="plazo" min="1"
+                        placeholder="Plazo de entrega" required>
+
+
+                    <label for="presupuesto">Presupuesto creado:</label>
+                    <input type="text" class="inputs creado" id="presupuesto" name="presupuesto" readonly
+                        placeholder="€0.00">
+                </div>
+
+
+
+                <!-- Aceptación de política -->
+                <div>
+                    <label>
+                        <input type="checkbox" name="privacidad" required>
+                        He leído y acepto la política de privacidad.
+                    </label>
+                </div>
+
+                <input type="submit" class="btn_submit" value="Enviar formulario">
+
+            </form>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <div class="brand-title">
+                    <img src="../images/logo.png" alt="Logo de GuiDev" class="logo" />
+                    <span>GuiDev</span>
+                </div>
+                <p class="footer__tagline">
+                    Transformando ideas en experiencias digitales excepcionales desde 2015.
+                </p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer__links">
+                <h4 class="footer_titles">Enlaces rápidos</h4>
+                <hr>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="view/galeria.html">Galería</a></li>
+                    <li><a href="view/presupuesto.html">Presupuesto</a></li>
+                    <li><a href="view/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer__social">
+                <h4 class="footer_titles">Síguenos</h4>
+                <hr>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer_contato">
+                <h4 class="footer_titles">Contacto</h4>
+                <hr>
+                <div class="contato_dados">
+                    <p>Calle Príncipe de Viana, Lérida</p>
+                    <p>(034) 641388529</p>
+                    <p>contacto@guidev.com</p>
+                    <p>Lun - Vie: 9h a 18h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 GuiDev. Todos los derechos reservados.</p>
+            <p>
+                <a href="aviso-legal.html">Aviso legal</a> |
+                <a href="politica-privacidad.html">Política de privacidad</a> |
+                <a href="#">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/137e8377c5.js" crossorigin="anonymous"></script>
+    <script src="../js/mobileMenu.js"></script>
+    <script src="../js/presupuesto.js"></script>
+
+</body>
+
+</html>

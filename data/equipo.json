@@ -1,0 +1,19 @@
+{
+  "equipo": [
+    {
+      "nombre": "Gabriel Ríos",
+      "cargo": "Desarrollador Full Stack",
+      "foto": "images/equipo1.jpg"
+    },
+    {
+      "nombre": "Mario Silva",
+      "cargo": "Diseñador UX/UI",
+      "foto": "images/equipo2.jpg"
+    },
+    {
+      "nombre": "Rodrigo Peña",
+      "cargo": "Especialista en SEO",
+      "foto": "images/equipo3.jpg"
+    }
+  ]
+}
