@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   // Referências
   const form = document.querySelector("form");
@@ -18,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Validación del formulario
   function validarFormulario(evento) {
-    evento.preventDefault(); // Evita el envío del formulario si hay errores
+    evento.preventDefault(); // Evita el envío si hay errores
 
+    let mensajes = '';
     let ok = true;
-    let mensajes = [];
 
-    // Expresiones regulares
+    // Expresiones regulares (no aceptan números)
     const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,15}$/;
     const regexApellidos = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,40}$/;
     const regexTelefono = /^[0-9]{9}$/;
@@ -35,38 +36,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const telefono = document.getElementById("telefono").value.trim();
     const email = document.getElementById("email").value.trim();
 
-    telefono = telefono.replace(/\D/g, '');
-
     // Validar nombre
     if (!regexNombre.test(nombre)) {
       ok = false;
-      mensajes.push("El nombre solo puede contener letras y un máximo de 15 caracteres.");
+      mensajes += 'El nombre solo puede contener letras y hasta 15 caracteres.\n';
     }
 
     // Validar apellidos
     if (!regexApellidos.test(apellidos)) {
       ok = false;
-      mensajes.push("Los apellidos solo pueden contener letras y un máximo de 40 caracteres.");
+      mensajes += 'Los apellidos solo pueden contener letras y hasta 40 caracteres.\n';
     }
 
     // Validar teléfono
     if (!regexTelefono.test(telefono)) {
       ok = false;
-      mensajes.push("El teléfono debe contener solo 9 dígitos numéricos.");
+      mensajes += 'El teléfono debe contener exactamente 9 dígitos numéricos.\n';
     }
 
     // Validar email
     if (!regexEmail.test(email)) {
       ok = false;
-      mensajes.push("El correo electrónico no es válido.");
+      mensajes += 'El correo electrónico no es válido.\n';
     }
 
-    // Mostrar errores o enviar formulario
-    if (!ok) {
-      alert(mensajes.join("\n"));
-    } else {
-      alert("Formulario enviado correctamente.");
+    // Mostrar errores o enviar
+    if (ok) {
       form.submit();
+    } else {
+      alert(mensajes);
+      return false;
     }
   }
 
@@ -100,3 +99,4 @@ document.addEventListener("DOMContentLoaded", function () {
   extras.forEach(extra => extra.addEventListener("change", calcularPresupuesto));
   plazo.addEventListener("input", calcularPresupuesto);
 });
+

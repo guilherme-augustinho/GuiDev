@@ -26,7 +26,7 @@ async function cargarEquipo() {
       const div = document.createElement('div');
       div.classList.add('card-equipo');
       div.innerHTML = `
-        <img src="${miembro.foto}" alt="${miembro.nombre}">
+        <img src="${miembro.foto}" alt="${miembro.nombre}" width="300" height="300">
         <h3>${miembro.nombre}</h3>
         <p>${miembro.cargo}</p>
       `;

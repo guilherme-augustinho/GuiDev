@@ -4,7 +4,7 @@ let opciones = {
     maximumAge: 0,
 };
 
-const coordenadasEmpresa = [41.6224542, 0.6285908];
+const coordenadasEmpresa = [41.6234542, 0.6288908];
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(mostrarRuta, fallback, opciones);
